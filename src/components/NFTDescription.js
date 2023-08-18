@@ -2,10 +2,11 @@ import React from "react";
 import NFTGeneralDetails from "./NFTGeneralDetails";
 import NFTAttributes from "./NFTAttributes";
 import NFTValue from "./NFTValue";
+import Loading from "./Loading";
 function NFTDescription({ nft }) {
   console.log(nft);
   if (!nft) {
-    return <div>Loading....</div>;
+    return <Loading />;
   }
   return (
     <div className="h-screen max-lg:h-full w-full flex max-lg:flex-col max-lg:items-center max-lg:mt-4 bg-white">

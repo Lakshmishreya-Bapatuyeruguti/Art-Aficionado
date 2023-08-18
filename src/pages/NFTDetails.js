@@ -3,6 +3,7 @@ import NFTDescription from "../components/NFTDescription";
 import abi from "../utils/collections-abi.json";
 import { useParams } from "react-router-dom";
 import { useContractReads } from "wagmi";
+import Loading from "../components/Loading";
 const boredApeContractConfig = {
   address: "0xE29F8038d1A3445Ab22AD1373c65eC0a6E1161a4",
   abi,
@@ -51,7 +52,7 @@ function NFTDetails() {
     fetchNFTImages();
   }, [data, id]);
   if (!data) {
-    return <div>Loading</div>;
+    return <Loading />;
   }
   return <NFTDescription nft={nft} />;
 }
