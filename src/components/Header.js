@@ -11,7 +11,7 @@ function Header() {
           <div className="text-xl font-semibold">Art Aficionado</div>
         </div>
         <div className="flex justify-between   w-1/2 space-x-4">
-          <div className="flex border border-gray-400 w-3/4 bg-white bg-opacity-75 px-4 py-2 rounded-full  backdrop-blur-md">
+          <div className="flex border border-gray-400 w-3/4 bg-white bg-opacity-75 px-4 py-2 rounded-full  backdrop-blur-md max-md:hidden">
             <input
               type="text"
               placeholder="Search NFT's"

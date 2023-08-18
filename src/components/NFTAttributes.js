@@ -12,10 +12,12 @@ function NFTAttributes({ attributes }) {
               key={index}
               className="bg-slate-200 p-2 rounded-md flex flex-col items-center justify-between"
             >
-              <span className="font-semibold text-lg">
+              <span className="font-semibold text-lg max-md:text-[10px]">
                 {attribute.trait_type}
               </span>
-              <span>{attribute.value}</span>
+              <span className=" text-md max-md:text-[10px]">
+                {attribute.value}
+              </span>
             </div>
           ))}
       </div>

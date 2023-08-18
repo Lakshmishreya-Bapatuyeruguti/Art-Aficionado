@@ -13,7 +13,7 @@ function NFTDetails() {
   const [nft, setNft] = useState({});
 
   const { id } = useParams();
-  const { data, isError, isLoading } = useContractReads({
+  const { data } = useContractReads({
     contracts: [
       {
         ...boredApeContractConfig,
@@ -46,7 +46,7 @@ function NFTDetails() {
         owner,
       };
       console.log(jsonData, "jddd");
-      await setNft(nftDetail);
+      setNft(nftDetail);
     }
     fetchNFTImages();
   }, [data, id]);

@@ -49,17 +49,17 @@ function NFTCollection() {
   return (
     <>
       <Banner />
-      <div className="flex flex-col ">
-        <h1 className="text-2xl text-gray-700 p-6">Trending NFT's</h1>
-        <div>
-          <div className="ml-4 grid grid-cols-5 gap-4 ">
+      <div className="flex flex-col p-4 md:p-8 lg:p-16">
+        <h1 className="text-2xl text-gray-700">Trending NFT's</h1>
+        <div className="mt-4 md:mt-6">
+          <div className="grid grid-cols-5  max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 ">
             {nfts.map((imageSrc, index) => (
               <NFTCard key={index} imgSrc={imageSrc} id={index} />
             ))}
           </div>
         </div>
         <button
-          className="text-gray-800 text-xl p-4 mt-1 text-center"
+          className="text-gray-800 text-xl p-4 mt-4 md:mt-6 text-center"
           onClick={fetchNextPage}
         >
           Load More ↓
