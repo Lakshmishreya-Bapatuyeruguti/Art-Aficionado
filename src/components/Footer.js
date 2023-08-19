@@ -20,13 +20,13 @@ function Footer() {
               <a href="/">Home</a>
             </li>
             <li className="mb-1">
-              <a href="/about">About Us</a>
+              <span>About Us</span>
             </li>
             <li className="mb-1">
-              <a href="/services">Services</a>
+              <span>Services</span>
             </li>
             <li className="mb-1">
-              <a href="/contact">Contact</a>
+              <span>Contact</span>
             </li>
           </ul>
         </div>

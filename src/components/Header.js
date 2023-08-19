@@ -1,14 +1,22 @@
 import React from "react";
 import { useAccount, useConnect } from "wagmi";
-
+import { useNavigate } from "react-router-dom";
 function Header() {
   const { address, isDisconnected, isConnected, isConnecting } = useAccount();
   const { connect, connectors } = useConnect();
+  const navigate = useNavigate();
   return (
     <>
       <header className=" z-30 sticky top-0 bg-white bg-opacity-100 shadow-md py-4 px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="text-xl font-semibold">Art Aficionado</div>
+          <div
+            className="text-xl font-semibold"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Art Aficionado
+          </div>
         </div>
         <div className="flex justify-between   w-1/2 space-x-4">
           <div className="flex border border-gray-400 w-3/4 bg-white bg-opacity-75 px-4 py-2 rounded-full  backdrop-blur-md max-md:hidden">
