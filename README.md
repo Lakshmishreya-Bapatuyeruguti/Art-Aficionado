@@ -23,6 +23,8 @@ Seaport SDK Integration: In the future, I plan to enhance the project by integra
 ![art3](https://github.com/Lakshmi-Shreya/Art-Aficionado/assets/76276531/1d227281-1f24-4324-9419-2d761eb92464)
 ![art4](https://github.com/Lakshmi-Shreya/Art-Aficionado/assets/76276531/d36dc377-46a9-4508-8453-8f3561849a93)
 
+### Note - 
+- Connect to goerli network to view nft details
 ### Steps to locally run the project
 1. **Clone the Repository:**
    ```
@@ -32,5 +34,5 @@ Seaport SDK Integration: In the future, I plan to enhance the project by integra
     npm install
 3. **Run React App**
   ```shell
-   npm start
+   npm start 
 
