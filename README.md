@@ -1,5 +1,5 @@
 # Art-Aficionado
-NFT gallery built using React, Tailwind CSS, Wagmi
+WEB3.0 based NFT gallery built using React, Tailwind CSS, Wagmi
 ### About
 NFT Gallery fetches nft and its metadta from collections smart contract using the smart contract of Bored Ape Yacht Club of goerli network. The Home page shows option to connect to metamask wallet and displays nft;s and to get any metadata information user can click on view NFT to get redirected to page where nft details could be seen. Wagmmi has been used for smart contract interaction and connecting to metamask functionality and React as frontend library and tailwind css for UI styling.
 ### Technical Decisions
