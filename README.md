@@ -10,7 +10,7 @@ I have used react library for fronyend and ttailwind css for styling
 - Efficient Data Fetching
 Instead of conventional looping, I leveraged the UseContractInfiniteReads hook from Wagmi. This allows us to fetch multiple NFT details simultaneously, optimizing performance and reducing load times.
 ### Challenges Faced
-- Optimized Data Fetching: One of the challenges I encountered was finding the most efficient way to fetch NFT details. We resolved this by adopting the UseContractInfiniteReads approach.
+- Optimized Data Fetching: One of the challenges I encountered was finding the most efficient way to fetch NFT details. Resolved this by adopting the UseContractInfiniteReads approach.
 
 - Compatibility Issues: I faced compatibility issues related to Wagmi versions. These were resolved through careful version management and ensuring all dependencies were compatible.
 
